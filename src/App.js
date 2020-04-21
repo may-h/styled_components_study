@@ -12,12 +12,15 @@ class App extends Component {
   }
 }
 
+//styled-components를 사용해서 <div>태그를 생성, 백틱(₩) 안에 css 스타일 코드를 넣어준다.
 const Container = styled.div`
   height: 100vh;
   width: 100%;
   background-color: lightgrey;
 `;
 
+//styled-components를 사용해 <button>태그를 생성, 백틱 안에 css 스타일 코드를 넣어준다.
+//여기서 Button은 Component이기 때문에 props를 받는다. 그걸 ${}안에 js코드를 사용해서 활용할 수 있다.
 const Button = styled.button`
   border-radius: 50px;
   padding: 5px;
